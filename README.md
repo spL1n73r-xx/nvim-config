@@ -29,7 +29,7 @@ rm -rf ~/.local/share/nvim
 
 -  Linux and Mac install
 ```bash
-git https://github.com/spL1n73r-xx/nvim-config.git "${XDG_CONFIG_HOME:-$HOME/.config}"/nvim
+git clone https://github.com/spL1n73r-xx/nvim-config.git "${XDG_CONFIG_HOME:-$HOME/.config}"/nvim
 ```
 
 <br>
