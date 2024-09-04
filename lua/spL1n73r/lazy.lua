@@ -15,4 +15,4 @@ if not (vim.uv or vim.loop).fs_stat(lazypath) then
 end
 vim.opt.rtp:prepend(lazypath)
 
-require("lazy").setup("spL1n73r.plugins")
+require("lazy").setup({ {import = "spL1n73r.plugins"}, { import = "spL1n73r.plugins.lsp" } })

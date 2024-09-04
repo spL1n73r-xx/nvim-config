@@ -12,9 +12,13 @@ opt.shiftwidth = 2
 opt.wrap = false
 opt.cursorline = true
 
+-- Search Settings
+opt.ignorecase = true
+opt.smartcase = true
+
 -- Colorscheme options
 opt.termguicolors = true
-opt.background = "dark"
+-- opt.background = "dark"
 opt.signcolumn = "yes"
 
 -- Backspace
@@ -28,4 +32,3 @@ opt.splitright = true
 opt.splitbelow = true
 
 vim.g.transparent_groups = vim.list_extend(vim.g.transparent_groups or {}, { "ExtraGroup" })
--- vimscript: let g:transparent_groups = extend(get(g:, 'transparent_groups', []), ["ExtraGroup"])
