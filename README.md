@@ -28,9 +28,17 @@ rm -rf ~/.local/share/nvim
 **Then git clone this rep to your  `$XDG_CONFIG_HOME/nvim`, `~/.config/nvim`**
 
 -  Linux and Mac install
+  **Original Repo:**
 ```bash
 git clone https://github.com/spL1n73r-xx/nvim-config.git "${XDG_CONFIG_HOME:-$HOME/.config}"/nvim
 ```
+<br>
+
+**Alternatively, you could install this Fork**
+```bash
+git clone https://github.com/LinuxUser255/nvim-config.git "${XDG_CONFIG_HOME:-$HOME/.config}"/nvim
+```
+
 
 <br>
 
