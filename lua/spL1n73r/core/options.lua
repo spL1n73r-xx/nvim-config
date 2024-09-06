@@ -30,5 +30,3 @@ opt.clipboard:append("unnamedplus")
 -- Split Windows
 opt.splitright = true
 opt.splitbelow = true
-
-vim.g.transparent_groups = vim.list_extend(vim.g.transparent_groups or {}, { "ExtraGroup" })
