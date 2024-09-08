@@ -1,7 +1,7 @@
 return {
   "nvim-treesitter/nvim-treesitter",
   event = { "BufReadPre", "BufNewFile" },
-  build= ":TSUpdate",
+  build = ":TSUpdate",
   dependencies = {
     "windwp/nvim-ts-autotag",
   },
@@ -14,6 +14,10 @@ return {
         "lua",
         "bash",
       },
+      auto_install = true,
+      sync_install = false,
+      ignore_install = {},
+      modules = {},
       highlight = { enable = true },
       indent = { enable = true },
       autotag = { enable = true },
@@ -27,5 +31,5 @@ return {
         },
       },
     })
-  end
+  end,
 }

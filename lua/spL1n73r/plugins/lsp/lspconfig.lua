@@ -35,8 +35,8 @@ return {
           capabilities = capabilities,
         })
       end,
-      ["rust"] = function()
-        lspconfig["rust"].setup({
+      ["rust_analyzer"] = function()
+        lspconfig.rust_analyzer.setup({
           capabilities = capabilities,
           cmd = {
             "rustup",
@@ -44,26 +44,23 @@ return {
             "stable",
             "rust-analyzer",
           },
-          on_attach = function(client, bufnr)
+
+          --[[on_attach = function(client, bufnr)
             vim.api.nvim_create_autocmd("BufWritePost", {
               pattern = { "*.rs" },
               callback = function(ctx)
                 client.notify("$/onDidChangeRsFile", { uri = ctx.match })
               end,
             })
-          end,
+          end,]]
+        })
+      end,
+
+      ["slint_lsp"] = function()
+        lspconfig.slint_lsp.setup({
+          capabilities = capabilities,
         })
       end,
     })
-
-    --[[    lspconfig.rust_analyzer.setup({
-      capabilities = capabilities,
-      cmd = {
-        "rustup",
-        "run",
-        "stable",
-        "rust-analyzer",
-      },
-    })]]
   end,
 }
